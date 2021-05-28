@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "677028081714",
+    "firebase_url": "https://android-apps-56747.firebaseio.com",
+    "project_id": "android-apps-56747",
+    "storage_bucket": "android-apps-56747.appspot.com"
+  },
+  "client": [     
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677028081714:android:ce1703efe7556bf30a8c2b",
+        "android_client_info": {
+          "package_name": "com.allinone.saveit.free.videodownloader.statussaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677028081714-uq9eo4dgn6l7mjv23fin3sac172urlm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfjQaUyyAjmx30VEXkvYgbV4fGgLq7NBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677028081714-uq9eo4dgn6l7mjv23fin3sac172urlm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    } 
+  ],
+  "configuration_version": "1"
+}

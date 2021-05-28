@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:chainUseRtl="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context="com.allinone.videosaver.free.videodownloader.statussaver.activity.DashboardActivity">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:tag="@string/tag_menu"
+            app:footer="@layout/duo_view_footer"
+            app:header="@layout/duo_view_header" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/framebgcolor"
+            android:orientation="vertical"
+            android:tag="@string/tag_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pattern" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/toolbarcolor"
+                android:gravity="center_horizontal"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:subtitleTextColor="@color/titletext"
+                app:titleTextColor="@color/titletext" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginBottom="?attr/actionBarSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <com.github.florent37.shapeofview.shapes.RoundRectView
+                    android:id="@+id/urlcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    app:shape_roundRect_bottomLeftRadius="0dp"
+                    app:shape_roundRect_bottomRightRadius="0dp"
+                    app:shape_roundRect_topLeftRadius="20dp"
+                    app:shape_roundRect_topRightRadius="20dp">
+
+                    <me.ibrahimsn.lib.SmoothBottomBar
+                        android:id="@+id/bottomBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:layout_gravity="bottom"
+                        app:backgroundColor="@color/bottombgcolor"
+                        app:iconSize="24dp"
+                        app:iconTint="@color/Gray"
+                        app:iconTintActive="@color/iconTintActive"
+                        app:indicatorColor="@color/titletext"
+                        app:indicatorRadius="10dp"
+                        app:itemPadding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:menu="@menu/menu_bottom"
+                        app:sideMargins="10dp"
+                        app:textColor="@color/textColor"
+                        app:textSize="14sp" />
+                </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+                <RelativeLayout
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
